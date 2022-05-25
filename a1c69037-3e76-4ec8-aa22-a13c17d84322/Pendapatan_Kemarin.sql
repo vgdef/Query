@@ -1,0 +1,6 @@
+SELECT
+*
+#        SUM(TOTAL) COMPARED_TO_YESTERDAY
+FROM pembayaran.pembayaran_tagihan pt
+WHERE pt.TANGGAL > DATE_ADD(NOW(), INTERVAL -1 DAY)
+  AND pt.TANGGAL < CURDATE()

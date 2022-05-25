@@ -1,0 +1,3 @@
+SELECT SUM(TOTAL) TOTAL_PENDAPATAN
+FROM pembayaran.pembayaran_tagihan pt
+WHERE pt.TANGGAL BETWEEN DATE(NOW()) AND NOW();

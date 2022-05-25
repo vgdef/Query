@@ -1,0 +1,49 @@
+SELECT
+r.DESKRIPSI RUANGAN,
+pppp.NORM,
+p.NOMOR,
+a.DESKRIPSI ANAMNESIS,
+pf.DESKRIPSI PEMERIKSAAN_FISIK,
+       rpp.DESKRIPSI RIWAYAT_PENYAKIT,
+master.getNamaLengkapPegawai(ppp.NIP) DPJP,
+       pgn.NAMA NAMA_PENGINPUT,
+       concat(IF(orr.RESEP_PASIEN_PULANG = 1,'TERAPI OBAT PULANG TERINPUT', 'TIDAK TERINPUT' ""))  TERAPI_OBAT_PULANG,
+       pgnn.NAMA NAMA_PENGORDER_RESEP,
+       a.TANGGAL TGL_INPUT,
+k.MASUK TGL_MASUK
+
+FROM pendaftaran.pendaftaran p
+LEFT JOIN pendaftaran.kunjungan k ON k.NOPEN=p.NOMOR
+LEFT JOIN pendaftaran.tujuan_pasien tp ON tp.NOPEN=p.NOMOR
+LEFT JOIN medicalrecord.anamnesis a ON a.PENDAFTARAN=p.NOMOR
+LEFT JOIN medicalrecord.pemeriksaan_fisik pf ON pf.PENDAFTARAN=p.NOMOR
+LEFT JOIN `master`.pasien pppp ON pppp.NORM=p.NORM
+LEFT JOIN `master`.ruangan r ON r.ID=k.RUANGAN
+LEFT JOIN `master`.dokter d ON d.ID=tp.DOKTER
+LEFT JOIN master.pegawai ppp ON ppp.NIP=d.NIP
+LEFT JOIN aplikasi.pengguna pgn ON pgn.ID=a.OLEH
+LEFT JOIN medicalrecord.rpp rpp ON rpp.KUNJUNGAN=k.NOMOR
+LEFT JOIN layanan.order_resep orr ON orr.KUNJUNGAN=k.NOMOR AND orr.RESEP_PASIEN_PULANG = 1
+LEFT JOIN aplikasi.pengguna pgnn ON pgnn.ID=orr.OLEH
+
+WHERE p.TANGGAL   BETWEEN DATE_FORMAT(NOW(), "%Y-03-01") AND DATE_FORMAT(NOW(), "%Y-04-01")
+#           > DATE_ADD(NOW(), INTERVAL - 31 DAY )
+  AND k.RUANGAN
+          IN (
+#    101030101,-- RANAP LT 4
+# 101030102, -- RANAP LT 5
+101030103-- RANAP LT 6
+# 101030104, -- RANAP LT 7
+#  101030105, -- RANAP LT 8
+#  101030107, -- RANAP LT 3
+# 101030108, -- RaANAP LT 6 ICU COVID
+#  101030109, -- RANAP LT 7 COVID
+# 101030110 -- RANAP LT 5 BIASA
+# 101040101, -- ICU
+# 101040102, -- ICCU
+# 101040103, -- PICU
+# 101040104 -- NICU
+)
+# LIKE '%1010201%'
+GROUP BY p.NOMOR
+ORDER BY p.TANGGAL ASC
