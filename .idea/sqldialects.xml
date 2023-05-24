@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/9.19.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/DOKTERIBS.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/FarmasiObat.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/JASPEL BARU.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Kunjungan Perhari.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/LaporanKeuangan.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Medicationrequest.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ResponTime.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ResponTimeLab.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/VolTindakanRekap.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/barang 1000 &gt;.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/barang.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/barangbck.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/bmhp.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/diabetes_militus.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dokter penunjang.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dokterumum.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dpjpumumIGD.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/general_consent.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jaspel.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/location.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/organization.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/pasienpulang.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/patient.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/penerimaan barang.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/practitioner.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/referensi.ssehat.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/tindakan.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/tindakan_dokter.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/visite.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/Downloads/ResponTimeRad.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/barang.sql" dialect="MySQL" />
+  </component>
+</project>
