@@ -1,0 +1,7 @@
+SELECT 
+DATE_FORMAT(pt.TANGGAL, '%M') BULAN
+, SUM(pt.TOTAL)
+FROM pembayaran.pembayaran_tagihan pt 
+WHERE pt.TANGGAL BETWEEN '2023-01-01' AND '2023-05-01' 
+AND pt.`STATUS`!=0
+GROUP BY DATE_FORMAT(pt.TANGGAL, '%M')
