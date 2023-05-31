@@ -47,5 +47,5 @@
 					 AND k.RUANGAN LIKE '101060101%'
 
 
-						 AND tm.TINDAKAN  IN (11549
+						 AND tm.TINDAKAN  IN (11549)
 				  GROUP BY olb.NOMOR
