@@ -1,0 +1,16 @@
+SELECt master.getNamaLengkapPegawai(d.NIP) DOKTER
+     , p.NORM
+     , DATE_FORMAT(k.MASUK, '%Y-%m') TGLMASUK
+     , CASE WHEN r.JENIS_KUNJUNGAN= 1 THEN 'RAWAT JALAN'
+        WHEN   r.JENIS_KUNJUNGAN = 3 THEN 'RAWAT INAP'
+        ELSE  'LABORATORIUM' END JENISKUNJUNGAN
+FROM pendaftaran.kunjungan k
+JOIN master.dokter d ON d.ID=k.DPJP
+JOIN pendaftaran.pendaftaran p On p.NOMOR=k.NOPEN
+JOIN master.ruangan r ON r.ID=k.RUANGAN
+WHERE k.DPJP IN (4,9,40,62,11,10,86,25,92,95,28,39,99,101)
+AND k.STATUS=2 AND
+  k.MASUK BETWEEN '2023-01-01' AND NOW()
+
+AND r.JENIS_KUNJUNGAN IN(1,3,4)
+

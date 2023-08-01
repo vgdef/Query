@@ -64,4 +64,25 @@ LEFT JOIN master.dokter dok1 ON dok1.ID=hl.DOKTER
 INNER JOIN pendaftaran.penjamin pj ON p.NOMOR=pj.NOPEN  AND pj.JENIS= 2
 LEFT JOIN master.referensi ref ON pj.JENIS=ref.ID AND ref.JENIS=10
 WHERE k.MASUK BETWEEN '2022-09-01' AND '2022-12-31' AND ol.`STATUS`=2
-AND ol.TUJUAN=101050102 AND k.`STATUS`=2;)
+AND ol.TUJUAN=101050102 AND k.`STATUS`=2;
+
+#REHAB
+SELECT
+ ref.DESKRIPSI CARA_BAYAR
+, pj.NOMOR SEP
+, `master`.getNamaLengkap(p.NORM) PASIEN
+, `master`.getNamaLengkapPegawai(dok1.NIP) DOKTERREHAB
+, r.DESKRIPSI RUANGAN
+, k.MASUK
+, k.KELUAR
+
+FROM pendaftaran.kunjungan k
+JOIN pendaftaran.pendaftaran p ON p.NOMOR=k.NOPEN
+LEFT JOIN master.dokter dok1 ON dok1.ID=k.DPJP
+INNER JOIN pendaftaran.penjamin pj ON p.NOMOR=pj.NOPEN  AND pj.JENIS= 2
+LEFT JOIN master.referensi ref ON pj.JENIS=ref.ID AND ref.JENIS=10
+LEFT JOIN master.ruangan r ON r.ID=k.RUANGAN
+WHERE k.MASUK BETWEEN '2023-01-01' AND '2023-06-01'
+AND k.DPJP=111
+AND k.RUANGAN=101080101
+AND r.JENIS_KUNJUNGAN IN(1,3);

@@ -1,39 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="RSJL OP 9.4" uuid="b5ded6dd-3934-4820-a4d1-8cf6936d7125">
+    <data-source source="LOCAL" name="RSJL OP" uuid="b5ded6dd-3934-4820-a4d1-8cf6936d7125">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://10.10.9.4:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="SATUSEHAT 9.19" uuid="5add4a29-1aaf-4aa9-98ab-df9db68890f5">
+    <data-source source="LOCAL" name="SATUSEHAT OP" uuid="5add4a29-1aaf-4aa9-98ab-df9db68890f5">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
+      <remarks>10.10.9.19</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://10.10.9.19:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="9.15" uuid="f5966a09-e601-4b84-9d62-2328f5cda9c1">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://10.10.9.15:3306</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="DASHMAN 9.18" uuid="1efb0e4d-92c1-4c30-9143-54dd377ce684">
+    <data-source source="LOCAL" name="DASHMAN" uuid="1efb0e4d-92c1-4c30-9143-54dd377ce684">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://10.10.9.18:3306</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="EDIET 9.14" uuid="e737f9c7-62e4-45b6-8f72-4e7649dda93e">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://10.10.9.14:3306/</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="RSJL DEV 9.9" uuid="e3dc0768-7667-4f38-a0d7-b99de658df75">
@@ -43,18 +30,54 @@
       <jdbc-url>jdbc:mysql://10.10.9.9:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="RSJL DEV 9.100" uuid="f986acb9-eaab-4cb6-a79f-4288adf46938">
+    <data-source source="LOCAL" name="RSJL DEV" uuid="f986acb9-eaab-4cb6-a79f-4288adf46938">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://10.10.9.100:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="JASPEL 9.11" uuid="2a59995c-859a-4379-bf95-34088387d701">
+    <data-source source="LOCAL" name="JASPEL" uuid="2a59995c-859a-4379-bf95-34088387d701">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://10.10.9.11:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="SATUSEHAT DEV" uuid="80cdae15-974b-48fa-ab76-8cec2bc3f3b4">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>10.10.9.15</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.10.9.15:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="APEL" uuid="1128be01-730b-49f2-8abe-e9ec81f307b9">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.10.9.16:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="@10.10.9.15" uuid="85d14236-9134-4e38-a520-cc2124fb49b4">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.10.9.15:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="SIRS PORTAL" uuid="2f8f3232-1660-4d90-9cfb-a9e2774778af">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.10.9.14:3306/</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="CELE" uuid="05692fda-7194-4fef-8f07-61a620868236">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.10.9.10:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
